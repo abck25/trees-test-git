@@ -24,7 +24,7 @@ def toptentreestempelhof():
 
     # Show me top 10 types of trees in district (abs.) VERSION 1
     toptentrees = df_tempelhof["Baumart deutsch"].value_counts().nlargest(
-        n=10).to_json()
+        n=20).to_json()
     print(toptentrees)
     return toptentrees
 
